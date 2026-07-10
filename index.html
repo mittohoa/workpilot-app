@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WorkPilot AI — Quản lý công việc, bấm giờ & trợ lý AI</title>
+<meta name="description" content="WorkPilot AI: bấm giờ công việc, ghi số lượng, báo cáo AI, đồng bộ đa thiết bị (realtime, offline-first). Tải cho Android & Windows." />
+<link rel="icon" href="assets/icon.png" />
+<style>
+  :root{
+    --bg:#0b1020; --card:#141a2e; --card2:#1b2340; --line:#26304f;
+    --fg:#eef2ff; --mut:#9aa6c7; --pri:#4f7cff; --pri2:#7c3aed; --ok:#10b981;
+    --radius:18px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+  a{color:var(--pri);text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.8);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;gap:14px;padding:14px 20px;max-width:1000px;margin:0 auto}
+  .nav img{width:30px;height:30px;border-radius:8px}
+  .nav b{font-size:18px}
+  .nav .sp{flex:1}
+  .nav a.link{color:var(--mut);font-size:14px}
+  .nav a.link:hover{color:var(--fg)}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--pri),var(--pri2));
+    color:#fff;padding:12px 20px;border-radius:12px;font-weight:600;border:0;cursor:pointer;font-size:15px}
+  .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--fg)}
+  .btn:hover{opacity:.92}
+  section{padding:70px 0;border-bottom:1px solid var(--line)}
+  .hero{text-align:center;padding:90px 0 70px}
+  .hero .logo{width:88px;height:88px;border-radius:22px;box-shadow:0 12px 40px rgba(79,124,255,.35)}
+  .hero h1{font-size:clamp(30px,6vw,46px);margin:18px 0 8px;letter-spacing:-.5px}
+  .hero p.tag{font-size:clamp(16px,3vw,20px);color:var(--mut);margin:0 auto 26px;max-width:640px}
+  .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .badge{display:inline-block;background:var(--card2);border:1px solid var(--line);
+    color:var(--mut);border-radius:999px;padding:5px 12px;font-size:13px;margin-bottom:18px}
+  h2{font-size:clamp(24px,4vw,32px);margin:0 0 8px}
+  .sub{color:var(--mut);margin:0 0 30px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+  .feat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+  .feat .ic{font-size:24px}
+  .feat h3{margin:10px 0 6px;font-size:17px}
+  .feat p{margin:0;color:var(--mut);font-size:14px}
+  .dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  .dlcard{background:linear-gradient(135deg,var(--card),var(--card2));border:1px solid var(--line);
+    border-radius:var(--radius);padding:24px;text-align:center}
+  .dlcard .ic{font-size:38px}
+  .dlcard h3{margin:8px 0 2px}
+  .dlcard small{color:var(--mut);display:block;margin-bottom:16px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px 16px;margin-bottom:10px}
+  details summary{cursor:pointer;font-weight:600;padding:12px 0;list-style:none}
+  details summary::-webkit-details-marker{display:none}
+  details summary::before{content:"＋";color:var(--pri);margin-right:10px;font-weight:700}
+  details[open] summary::before{content:"－"}
+  details p{color:var(--mut);margin:0 0 14px}
+  .policy li{color:var(--mut);margin-bottom:8px}
+  .policy b{color:var(--fg)}
+  footer{padding:40px 0;text-align:center;color:var(--mut);font-size:13px}
+  .note{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--mut);font-size:14px}
+  code{background:#0006;border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <img src="assets/icon.png" alt="logo" />
+    <b>WorkPilot AI</b>
+    <span class="sp"></span>
+    <a class="link" href="#tinh-nang">Tính năng</a>
+    <a class="link" href="#tai-ve">Tải về</a>
+    <a class="link" href="#chinh-sach">Chính sách</a>
+    <a class="link" href="#ho-tro">Hỗ trợ</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <img class="logo" src="assets/icon.png" alt="WorkPilot AI" />
+    <h1>WorkPilot AI</h1>
+    <p class="tag">Trợ lý quản lý công việc &amp; thời gian có AI — bấm giờ, ghi số lượng,
+      báo cáo thông minh, đồng bộ đa thiết bị. Chạy offline, đồng bộ khi có mạng.</p>
+    <div class="cta">
+      <a class="btn" href="#tai-ve">⬇ Tải ứng dụng</a>
+      <a class="btn ghost" href="#tinh-nang">Xem tính năng</a>
+    </div>
+    <p style="margin-top:22px"><span class="badge">Phiên bản 1.0.0 · Android &amp; Windows</span></p>
+  </section>
+
+  <section id="tinh-nang">
+    <h2>Tính năng chính</h2>
+    <p class="sub">Mọi thứ bạn cần để theo dõi công việc và năng suất.</p>
+    <div class="grid">
+      <div class="feat"><div class="ic">⏱️</div><h3>Bấm giờ công việc</h3><p>Đo thời gian theo từng việc/loại việc, cảm xúc &amp; năng lượng mỗi phiên.</p></div>
+      <div class="feat"><div class="ic">🔢</div><h3>Ghi số lượng</h3><p>Ghi nhanh việc lặp lại và số lượng (hồ sơ, cuộc gọi…) để thống kê &amp; báo cáo.</p></div>
+      <div class="feat"><div class="ic">✨</div><h3>Trợ lý AI</h3><p>Báo cáo ngày/tuần, gợi ý &amp; cảnh báo chủ động, phân loại từ ảnh/tin nhắn (dùng API key của bạn).</p></div>
+      <div class="feat"><div class="ic">📊</div><h3>Thống kê trực quan</h3><p>Biểu đồ thời gian, số lượng, cảm xúc theo loại việc và theo ngày.</p></div>
+      <div class="feat"><div class="ic">🏳️</div><h3>Cần xem lại</h3><p>Ghi chú theo dõi/đề xuất gắn vào việc hay phiên, gom lại để xử lý sau.</p></div>
+      <div class="feat"><div class="ic">☁️</div><h3>Đồng bộ realtime</h3><p>Đa thiết bị tức thì, offline-first: mất mạng vẫn ghi, tự đồng bộ khi mạng ổn.</p></div>
+      <div class="feat"><div class="ic">🧩</div><h3>Widget màn hình chính</h3><p>Xem nhanh tổng giờ hôm nay ngay ngoài màn hình (Android).</p></div>
+      <div class="feat"><div class="ic">🔒</div><h3>Riêng tư</h3><p>Dữ liệu lưu ngay trên máy. Đồng bộ dùng tài khoản Supabase của riêng bạn.</p></div>
+    </div>
+  </section>
+
+  <section id="tai-ve">
+    <h2>Tải về</h2>
+    <p class="sub">Chọn nền tảng của bạn. Miễn phí.</p>
+    <div class="dl">
+      <div class="dlcard">
+        <div class="ic">🤖</div>
+        <h3>Android</h3>
+        <small>APK · Android 6.0+ (API 23)</small>
+        <a class="btn" href="https://github.com/mittohoa/workpilot-app/releases/latest/download/workpilot-1.0.0.apk">⬇ Tải APK (workpilot-1.0.0.apk)</a>
+        <p style="margin-top:14px;font-size:13px;color:var(--mut)">Mở file APK &amp; cho phép cài từ nguồn không rõ nếu được hỏi.</p>
+      </div>
+      <div class="dlcard">
+        <div class="ic">🖥️</div>
+        <h3>Windows</h3>
+        <small>Bản desktop · Windows 10/11 64-bit</small>
+        <a class="btn" href="https://github.com/mittohoa/workpilot-app/releases/latest/download/workpilot-1.0.0-windows.zip">⬇ Tải bản Windows (.zip)</a>
+        <p style="margin-top:14px;font-size:13px;color:var(--mut)">Giải nén rồi chạy <code>workpilot_ai.exe</code>.</p>
+      </div>
+    </div>
+    <p style="margin-top:18px" class="note">Tất cả bản tải nằm ở mục
+      <a href="https://github.com/mittohoa/workpilot-app/releases">Releases</a> của dự án.</p>
+  </section>
+
+  <section id="chinh-sach">
+    <h2>Chính sách người dùng &amp; quyền riêng tư</h2>
+    <p class="sub">Ngắn gọn, rõ ràng.</p>
+    <ul class="policy">
+      <li><b>Dữ liệu của bạn ở trên máy bạn.</b> App lưu trữ cục bộ (offline-first). Không có máy chủ trung tâm nào của chúng tôi thu thập dữ liệu công việc của bạn.</li>
+      <li><b>Đồng bộ là tùy chọn &amp; do bạn kiểm soát.</b> Nếu bật, dữ liệu đồng bộ vào <b>tài khoản Supabase của riêng bạn</b> mà bạn tự cấu hình; chỉ bạn truy cập được (RLS theo tài khoản).</li>
+      <li><b>AI dùng API key của bạn.</b> Tính năng AI gọi trực tiếp nhà cung cấp (Gemini/OpenAI-compatible) bằng khóa bạn nhập; chúng tôi không trung chuyển hay lưu nội dung.</li>
+      <li><b>Không quảng cáo, không theo dõi hành vi.</b> App không nhúng SDK quảng cáo/analytics của bên thứ ba.</li>
+      <li><b>Quyền truy cập:</b> Internet (AI/đồng bộ), Camera (quét QR cấu hình), Micro (nhập bằng giọng nói) — chỉ dùng khi bạn kích hoạt.</li>
+      <li><b>Xóa dữ liệu:</b> Gỡ app sẽ xóa dữ liệu cục bộ. Dữ liệu đã đồng bộ do bạn quản lý trong Supabase của mình.</li>
+    </ul>
+  </section>
+
+  <section id="ho-tro">
+    <h2>Hỗ trợ &amp; câu hỏi thường gặp</h2>
+    <p class="sub">Chưa tìm thấy câu trả lời? Gửi yêu cầu hỗ trợ bên dưới.</p>
+
+    <details><summary>App có cần Internet không?</summary>
+      <p>Không bắt buộc. Mọi tính năng cốt lõi (bấm giờ, ghi việc, thống kê) chạy offline. Internet chỉ cần cho AI và đồng bộ.</p></details>
+    <details><summary>Làm sao để dùng tính năng AI?</summary>
+      <p>Vào <b>Cài đặt → AI</b>, dán API key (Google Gemini miễn phí tại aistudio.google.com/apikey, hoặc Groq/OpenRouter/OpenAI). Có thể thêm nhiều key để tự xoay vòng.</p></details>
+    <details><summary>Đồng bộ đa thiết bị thế nào?</summary>
+      <p>Tạo project Supabase miễn phí, chạy file cấu hình SQL đi kèm, rồi nhập URL + anon key vào <b>Cài đặt → Đồng bộ</b> và đăng nhập. Có thể chép cấu hình sang máy khác bằng file/QR.</p></details>
+    <details><summary>Dữ liệu của tôi có an toàn không?</summary>
+      <p>Dữ liệu lưu trên máy bạn; nếu đồng bộ thì nằm trong tài khoản Supabase của riêng bạn với bảo mật theo hàng (RLS). Xem mục Chính sách ở trên.</p></details>
+    <details><summary>Cài APK báo chặn thì sao?</summary>
+      <p>Android chặn cài từ nguồn ngoài Play Store theo mặc định. Khi được hỏi, chọn “Vẫn cài đặt / Cho phép nguồn này”.</p></details>
+
+    <div class="note" style="margin-top:20px">
+      <b>Gửi yêu cầu hỗ trợ</b><br/>
+      Khi gửi email, vui lòng ghi rõ <b>phiên bản app</b> (1.0.0) và <b>thông tin thiết bị</b>
+      (hệ điều hành, dòng máy) để chúng tôi hỗ trợ nhanh hơn.
+      <p style="margin-top:14px">
+        <a class="btn" href="mailto:ttqlcntt.dev1@hutech.edu.vn?subject=%5BWorkPilot%20AI%5D%20Y%C3%AAu%20c%E1%BA%A7u%20h%E1%BB%97%20tr%E1%BB%A3%20-%20v1.0.0&body=M%C3%B4%20t%E1%BA%A3%20v%E1%BA%A5n%20%C4%91%E1%BB%81%3A%0A%0A%0A---%20Th%C3%B4ng%20tin%20%28gi%C3%BAp%20ch%C3%BAng%20t%C3%B4i%20h%E1%BB%97%20tr%E1%BB%A3%20nhanh%20h%C6%A1n%29%20---%0APhi%C3%AAn%20b%E1%BA%A3n%20app%3A%201.0.0%0AN%E1%BB%81n%20t%E1%BA%A3ng%3A%20%28Android%20/%20Windows%29%0AThi%E1%BA%BFt%20b%E1%BB%8B%20/%20H%E1%BB%87%20%C4%91i%E1%BB%81u%20h%C3%A0nh%3A%20">✉ Gửi email hỗ trợ</a>
+      </p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><b>WorkPilot AI</b> · Phiên bản 1.0.0</p>
+    <p>Made with ☕ · <a href="https://github.com/mittohoa/workpilot-app/releases">Bản phát hành</a></p>
+  </div>
+</footer>
+</body>
+</html>
