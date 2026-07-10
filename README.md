@@ -21,7 +21,7 @@ Trợ lý quản lý công việc & thời gian có AI — bấm giờ, ghi số
 Dữ liệu lưu cục bộ trên máy bạn. Đồng bộ (tùy chọn) vào tài khoản Supabase riêng của bạn. AI gọi trực tiếp bằng API key của bạn. Không quảng cáo, không theo dõi hành vi. Xem chi tiết ở trang giới thiệu.
 
 ## Hỗ trợ
-Gửi email: **ttqlcntt.dev1@hutech.edu.vn** — nhớ ghi **phiên bản app** và **thông tin thiết bị (HĐH, dòng máy)**.
+Gửi email: **mittohoa@gmail.com** — nhớ ghi **phiên bản app** và **thông tin thiết bị (HĐH, dòng máy)**.
 
 ---
 Mã nguồn chính được quản lý riêng (private). Repo này phục vụ phát hành & giới thiệu.
