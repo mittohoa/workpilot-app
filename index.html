@@ -68,6 +68,11 @@
   .pills{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 4px}
   .pill{background:var(--card2);border:1px solid var(--line);border-radius:999px;
     padding:8px 14px;font-size:13px;color:var(--fg)}
+  .shots{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+  .shot{text-align:center;max-width:280px}
+  .shot img{width:100%;border-radius:26px;border:1px solid var(--line);
+    box-shadow:0 12px 40px #0008;display:block}
+  .shot span{display:block;color:var(--mut);font-size:13px;margin-top:12px}
 </style>
 </head>
 <body>
@@ -77,6 +82,7 @@
     <b>WorkPilot AI</b>
     <span class="sp"></span>
     <a class="link" href="#gioi-thieu">Giới thiệu</a>
+    <a class="link" href="#anh">Ảnh</a>
     <a class="link" href="#tinh-nang">Tính năng</a>
     <a class="link" href="#tai-ve">Tải về</a>
     <a class="link" href="#chinh-sach">Chính sách</a>
@@ -124,6 +130,21 @@
         cáo ngày/tuần. <b>Riêng tư theo thiết kế:</b> dữ liệu lưu trên máy; đồng bộ (tùy
         chọn) dùng tài khoản Supabase của <i>riêng bạn</i>; tính năng AI dùng API key
         của bạn (hoặc proxy bạn tự dựng) — chúng tôi không giữ dữ liệu của bạn.</p>
+    </div>
+  </section>
+
+  <section id="anh">
+    <h2>Ảnh màn hình</h2>
+    <p class="sub">Giao diện tối, gọn, tập trung vào thao tác nhanh (ảnh thật từ Android).</p>
+    <div class="shots">
+      <div class="shot">
+        <img src="assets/shot-home.png" alt="Màn hình Hôm nay — tổng giờ, gợi ý AI, dòng thời gian" loading="lazy" />
+        <span>Hôm nay — tổng giờ, gợi ý &amp; cảnh báo AI, dòng thời gian</span>
+      </div>
+      <div class="shot">
+        <img src="assets/shot-stats.png" alt="Màn hình Thống kê — biểu đồ thời gian theo loại việc và theo ngày" loading="lazy" />
+        <span>Thống kê — thời gian theo loại việc &amp; theo ngày</span>
+      </div>
     </div>
   </section>
 
