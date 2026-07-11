@@ -62,6 +62,12 @@
   footer{padding:40px 0;text-align:center;color:var(--mut);font-size:13px}
   .note{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--mut);font-size:14px}
   code{background:#0006;border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+  .about{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .about p{color:var(--mut);line-height:1.7;margin:0 0 14px}
+  .about b{color:var(--fg)}
+  .pills{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 4px}
+  .pill{background:var(--card2);border:1px solid var(--line);border-radius:999px;
+    padding:8px 14px;font-size:13px;color:var(--fg)}
 </style>
 </head>
 <body>
@@ -70,6 +76,7 @@
     <img src="assets/icon.png" alt="logo" />
     <b>WorkPilot AI</b>
     <span class="sp"></span>
+    <a class="link" href="#gioi-thieu">Giới thiệu</a>
     <a class="link" href="#tinh-nang">Tính năng</a>
     <a class="link" href="#tai-ve">Tải về</a>
     <a class="link" href="#chinh-sach">Chính sách</a>
@@ -81,13 +88,43 @@
   <section class="hero">
     <img class="logo" src="assets/icon.png" alt="WorkPilot AI" />
     <h1>WorkPilot AI</h1>
-    <p class="tag">Trợ lý quản lý công việc &amp; thời gian có AI — bấm giờ, ghi số lượng,
-      báo cáo thông minh, đồng bộ đa thiết bị. Chạy offline, đồng bộ khi có mạng.</p>
+    <p class="tag">“Hệ điều hành công việc” cá nhân cho dân IT/văn phòng: ghi lại
+      <b>đã nhận việc gì, đã làm gì, tốn bao lâu</b> — rồi để AI biến dấu vết đó thành
+      báo cáo, thống kê và gợi ý. Chạy offline, dữ liệu nằm trên máy bạn.</p>
     <div class="cta">
       <a class="btn" href="#tai-ve">⬇ Tải ứng dụng</a>
-      <a class="btn ghost" href="#tinh-nang">Xem tính năng</a>
+      <a class="btn ghost" href="#gioi-thieu">Tìm hiểu thêm</a>
     </div>
-    <p style="margin-top:22px"><span class="badge">Phiên bản 1.1.4 · Android &amp; Windows</span></p>
+    <p style="margin-top:22px"><span class="badge">Phiên bản 1.1.5 · Android &amp; Windows · Miễn phí</span></p>
+  </section>
+
+  <section id="gioi-thieu">
+    <h2>WorkPilot AI là gì?</h2>
+    <p class="sub">Không chỉ là app to-do — mà là “bộ nhớ thứ hai” cho công việc của bạn.</p>
+    <div class="about">
+      <p>Một ngày của người làm IT/văn thư/hỗ trợ chuyển ngữ cảnh liên tục: fix API,
+        hỗ trợ phòng ban, họp, viết SQL, trả email, làm công văn, kiểm tra tài chính…
+        Đến cuối ngày gần như <b>không nhớ nổi mình đã làm gì</b> để báo cáo. Vấn đề
+        không phải “quá nhiều việc”, mà là <b>quá nhiều loại việc và ngữ cảnh</b>.</p>
+      <p>WorkPilot AI được xây như một <b>hệ điều hành công việc cá nhân</b>: nó không
+        chỉ lưu task, mà lưu toàn bộ <b>dấu vết làm việc</b> — yêu cầu của ai/phòng nào,
+        thời gian tiêu tốn, số lượng, trạng thái, cảm xúc, hạn chót, tệp đính kèm và các
+        phân tích của AI. Sau vài tháng, bạn có một kho dữ liệu để AI trả lời:
+        <i>“Tháng qua mình dành bao nhiêu thời gian cho HRM?”, “Ai giao việc nhiều
+        nhất?”, “Việc nào hay bị chậm?”, “Viết báo cáo tuần giúp mình.”</i></p>
+      <div class="pills">
+        <span class="pill">🗂️ Bấm giờ &amp; ghi số lượng theo từng việc/loại</span>
+        <span class="pill">🧠 AI báo cáo, xu hướng, kế hoạch &amp; cảnh báo</span>
+        <span class="pill">📷 Nhập nhanh từ ảnh/whiteboard/tin nhắn</span>
+        <span class="pill">☁️ Offline-first, đồng bộ realtime đa thiết bị</span>
+        <span class="pill">🔒 Dữ liệu của bạn, khóa của bạn</span>
+      </div>
+      <p class="note" style="margin-top:18px"><b>Cho ai?</b> Lập trình viên, cán bộ CNTT,
+        văn thư, hỗ trợ người dùng — bất kỳ ai phải theo dõi nhiều loại việc và làm báo
+        cáo ngày/tuần. <b>Riêng tư theo thiết kế:</b> dữ liệu lưu trên máy; đồng bộ (tùy
+        chọn) dùng tài khoản Supabase của <i>riêng bạn</i>; tính năng AI dùng API key
+        của bạn (hoặc proxy bạn tự dựng) — chúng tôi không giữ dữ liệu của bạn.</p>
+    </div>
   </section>
 
   <section id="tinh-nang">
@@ -108,8 +145,11 @@
       <div class="feat"><div class="ic">💾</div><h3>Sao lưu mã hóa</h3><p>Xuất/khôi phục toàn bộ dữ liệu bằng mật khẩu của riêng bạn.</p></div>
       <div class="feat"><div class="ic">📷</div><h3>Tạo việc từ ảnh</h3><p>Chụp/chọn ảnh whiteboard, tin nhắn, lỗi… AI đọc và bóc tách thành danh sách việc.</p></div>
       <div class="feat"><div class="ic">🍅</div><h3>Tập trung (Pomodoro)</h3><p>Đếm ngược tập trung/nghỉ, tự ghi giờ cho việc; chia nhỏ việc lớn bằng checklist.</p></div>
-      <div class="feat"><div class="ic">🔐</div><h3>Khóa ứng dụng</h3><p>Bảo vệ dữ liệu công việc bằng mã PIN khi mở app.</p></div>
-      <div class="feat"><div class="ic">🔒</div><h3>Riêng tư</h3><p>Dữ liệu lưu ngay trên máy. Đồng bộ dùng tài khoản Supabase của riêng bạn.</p></div>
+      <div class="feat"><div class="ic">⚡</div><h3>Thao tác nhanh</h3><p>Vuốt để hoàn thành/xoá, ghi nhanh “thông minh” (#nhãn @người !ưu-tiên), chọn nhiều &amp; xử lý hàng loạt, hoãn hạn 1 chạm.</p></div>
+      <div class="feat"><div class="ic">🗒️</div><h3>Việc con &amp; số lượng</h3><p>Chia nhỏ việc lớn thành checklist có tiến độ; ghi số lượng theo đơn vị để thống kê &amp; báo cáo.</p></div>
+      <div class="feat"><div class="ic">🔄</div><h3>Nhập/Xuất dữ liệu</h3><p>Xuất phiên, số lượng, công việc ra CSV (Excel); nhập việc hàng loạt từ CSV; sao lưu mã hóa.</p></div>
+      <div class="feat"><div class="ic">🔐</div><h3>Khóa ứng dụng</h3><p>Bảo vệ dữ liệu công việc bằng mã PIN khi mở app hoặc quay lại từ nền.</p></div>
+      <div class="feat"><div class="ic">🔒</div><h3>Riêng tư</h3><p>Dữ liệu lưu ngay trên máy. Đồng bộ dùng tài khoản Supabase của riêng bạn; AI dùng API key của bạn.</p></div>
     </div>
   </section>
 
@@ -121,14 +161,14 @@
         <div class="ic">🤖</div>
         <h3>Android</h3>
         <small>APK · Android 6.0+ (API 23)</small>
-        <a class="btn" href="https://github.com/mittohoa/workpilot-app/releases/latest/download/workpilot-1.1.4.apk">⬇ Tải APK (workpilot-1.1.4.apk)</a>
+        <a class="btn" href="https://github.com/mittohoa/workpilot-app/releases/latest/download/workpilot-1.1.5.apk">⬇ Tải APK (workpilot-1.1.5.apk)</a>
         <p style="margin-top:14px;font-size:13px;color:var(--mut)">Mở file APK &amp; cho phép cài từ nguồn không rõ nếu được hỏi.</p>
       </div>
       <div class="dlcard">
         <div class="ic">🖥️</div>
         <h3>Windows</h3>
         <small>Bản desktop · Windows 10/11 64-bit</small>
-        <a class="btn" href="https://github.com/mittohoa/workpilot-app/releases/latest/download/workpilot-1.1.4-windows.zip">⬇ Tải bản Windows (.zip)</a>
+        <a class="btn" href="https://github.com/mittohoa/workpilot-app/releases/latest/download/workpilot-1.1.5-windows.zip">⬇ Tải bản Windows (.zip)</a>
         <p style="margin-top:14px;font-size:13px;color:var(--mut)">Giải nén rồi chạy <code>workpilot_ai.exe</code>.</p>
       </div>
     </div>
@@ -166,10 +206,10 @@
 
     <div class="note" style="margin-top:20px">
       <b>Gửi yêu cầu hỗ trợ</b><br/>
-      Khi gửi email, vui lòng ghi rõ <b>phiên bản app</b> (1.1.4) và <b>thông tin thiết bị</b>
+      Khi gửi email, vui lòng ghi rõ <b>phiên bản app</b> (1.1.5) và <b>thông tin thiết bị</b>
       (hệ điều hành, dòng máy) để chúng tôi hỗ trợ nhanh hơn.
       <p style="margin-top:14px">
-        <a class="btn" href="mailto:mittohoa@gmail.com?subject=%5BWorkPilot%20AI%5D%20Y%C3%AAu%20c%E1%BA%A7u%20h%E1%BB%97%20tr%E1%BB%A3%20-%20v1.1.4&body=M%C3%B4%20t%E1%BA%A3%20v%E1%BA%A5n%20%C4%91%E1%BB%81%3A%0A%0A%0A---%20Th%C3%B4ng%20tin%20%28gi%C3%BAp%20ch%C3%BAng%20t%C3%B4i%20h%E1%BB%97%20tr%E1%BB%A3%20nhanh%20h%C6%A1n%29%20---%0APhi%C3%AAn%20b%E1%BA%A3n%20app%3A%201.1.4%0AN%E1%BB%81n%20t%E1%BA%A3ng%3A%20%28Android%20/%20Windows%29%0AThi%E1%BA%BFt%20b%E1%BB%8B%20/%20H%E1%BB%87%20%C4%91i%E1%BB%81u%20h%C3%A0nh%3A%20">✉ Gửi email hỗ trợ</a>
+        <a class="btn" href="mailto:mittohoa@gmail.com?subject=%5BWorkPilot%20AI%5D%20Y%C3%AAu%20c%E1%BA%A7u%20h%E1%BB%97%20tr%E1%BB%A3%20-%20v1.1.5&body=M%C3%B4%20t%E1%BA%A3%20v%E1%BA%A5n%20%C4%91%E1%BB%81%3A%0A%0A%0A---%20Th%C3%B4ng%20tin%20%28gi%C3%BAp%20ch%C3%BAng%20t%C3%B4i%20h%E1%BB%97%20tr%E1%BB%A3%20nhanh%20h%C6%A1n%29%20---%0APhi%C3%AAn%20b%E1%BA%A3n%20app%3A%201.1.5%0AN%E1%BB%81n%20t%E1%BA%A3ng%3A%20%28Android%20/%20Windows%29%0AThi%E1%BA%BFt%20b%E1%BB%8B%20/%20H%E1%BB%87%20%C4%91i%E1%BB%81u%20h%C3%A0nh%3A%20">✉ Gửi email hỗ trợ</a>
       </p>
     </div>
   </section>
@@ -177,7 +217,7 @@
 
 <footer>
   <div class="wrap">
-    <p><b>WorkPilot AI</b> · Phiên bản 1.1.4</p>
+    <p><b>WorkPilot AI</b> · Phiên bản 1.1.5</p>
     <p>Made with ☕ · <a href="https://github.com/mittohoa/workpilot-app/releases">Bản phát hành</a></p>
   </div>
 </footer>
