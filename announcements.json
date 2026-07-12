@@ -1,10 +1,11 @@
 {
   "announcements": [
     {
-      "id": "welcome-2026-07",
-      "title": "Chào mừng đến với WorkPilot AI 👋",
-      "body": "Cảm ơn bạn đã dùng app. Từ nay các thông báo quan trọng (bản mới, bảo trì, mẹo dùng) sẽ hiện ngay tại đây. Bấm \"Đã hiểu\" để ẩn.",
-      "level": "info"
+      "id": "update-2026-07-12-1935",
+      "title": "Cập nhật phiên bản mới",
+      "body": "Đã có bản cập nhật 1.1.20, có thể cập nhật ngay",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/latest/download/workpilot-1.1.20.apk"
     }
   ]
 }
