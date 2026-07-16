@@ -1,11 +1,11 @@
 {
-  "announcements": [
+   "announcements": [
     {
-      "id": "update-2026-07-12-1935",
-      "title": "Cập nhật phiên bản mới",
-      "body": "Đã có bản cập nhật 1.1.20, có thể cập nhật ngay",
-      "level": "update",
-      "url": "https://github.com/mittohoa/workpilot-app/releases/latest/download/workpilot-1.1.20.apk"
+      "id": "welcome-2026-06-26",
+      "title": "🎉 Chào mừng đến với WorkPilot",
+      "body": "Cảm ơn bạn đã cài đặt WorkPilot! Hãy đăng nhập và bắt đầu quản lý công việc, ghi chú và tiến độ của bạn một cách hiệu quả. Chúc bạn có những trải nghiệm tuyệt vời!",
+      "level": "info",
+      "url": ""
     }
   ]
 }
