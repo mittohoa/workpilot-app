@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư — WorkPilot AI</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 820px; margin: 0 auto; padding: 24px 18px 64px;
+         font: 16px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size: 1.7rem; margin-bottom: .2em; }
+  h2 { font-size: 1.18rem; margin-top: 2em; border-bottom: 1px solid #8884; padding-bottom: .25em; }
+  .meta { color: #6b7280; font-size: .92rem; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .94rem; }
+  th, td { border: 1px solid #8884; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #8881; }
+  code { background: #8882; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  .key { border-left: 4px solid #2563EB; background: #2563EB14; padding: 12px 16px; margin: 1.4em 0; }
+  footer { margin-top: 3em; color: #6b7280; font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<h1>Chính sách quyền riêng tư</h1>
+<p class="meta"><strong>WorkPilot AI</strong> · Áp dụng từ 11/09/2026 · Áp dụng cho phiên bản 1.3.0 trở lên (Android và Windows)</p>
+
+<div class="key">
+  <strong>Tóm gọn:</strong> WorkPilot AI là ứng dụng ghi chép công việc chạy <strong>ngay trên máy bạn</strong>.
+  Nhà phát triển <strong>không có máy chủ nào thu dữ liệu của bạn</strong>, không bán dữ liệu, không quảng cáo,
+  không theo dõi hành vi. Mọi việc gửi dữ liệu ra ngoài đều do <strong>bạn chủ động bật</strong> và
+  trỏ tới <strong>dịch vụ bạn tự chọn bằng khoá của chính bạn</strong>.
+</div>
+
+<h2>1. Ai chịu trách nhiệm</h2>
+<p>Ứng dụng do cá nhân phát triển và phát hành. Liên hệ về quyền riêng tư:
+<a href="mailto:mittohoa@gmail.com">mittohoa@gmail.com</a>.</p>
+
+<h2>2. Dữ liệu nằm ở đâu</h2>
+<p>Toàn bộ dữ liệu bạn nhập — tên việc, ghi chú, phiên bấm giờ, dự án, tệp đính kèm, cấu hình —
+được lưu trong một tệp cơ sở dữ liệu <strong>trong vùng riêng của ứng dụng trên thiết bị</strong>.
+Ứng dụng hoạt động đầy đủ khi không có mạng và khi bạn không bật bất kỳ tính năng kết nối nào.</p>
+
+<h2>3. Những tính năng có gửi dữ liệu ra ngoài (tất cả đều tuỳ chọn)</h2>
+
+<table>
+<tr><th>Tính năng</th><th>Bạn phải làm gì để bật</th><th>Dữ liệu gửi đi và gửi cho ai</th></tr>
+
+<tr>
+  <td><strong>Trợ lý AI</strong> (tạo việc từ chữ/giọng/ảnh, báo cáo, gợi ý)</td>
+  <td>Tự lấy khoá API của mình từ nhà cung cấp rồi dán vào Cài đặt → AI. <strong>Không dán khoá thì mọi tính năng AI tắt</strong>, các phần còn lại của ứng dụng vẫn dùng bình thường.</td>
+  <td>Nội dung bạn yêu cầu xử lý (tên việc, ghi chú, ảnh bạn chọn, dữ liệu trong kỳ báo cáo) được gửi <strong>trực tiếp từ thiết bị tới nhà cung cấp bạn chọn</strong> — Google Gemini, Groq, OpenRouter hoặc OpenAI. Nhà phát triển <strong>không nhận bản sao</strong>. Việc nhà cung cấp lưu gì, bao lâu do chính sách của họ quyết định — hãy đọc chính sách của nhà cung cấp bạn dùng. Khoá API được lưu <strong>chỉ trên máy bạn</strong>.</td>
+</tr>
+
+<tr>
+  <td><strong>Đồng bộ nhiều thiết bị</strong></td>
+  <td>Tự tạo dự án Supabase của mình rồi nhập địa chỉ + khoá công khai, hoặc quét mã QR cấu hình từ máy khác. Kèm tạo tài khoản email/mật khẩu.</td>
+  <td>Dữ liệu công việc được đồng bộ lên <strong>dự án Supabase do bạn cấu hình</strong>. Mặc định chức năng này <strong>tắt</strong>. Ảnh đính kèm <strong>không bao giờ</strong> được đồng bộ, luôn ở lại máy.</td>
+</tr>
+
+<tr>
+  <td><strong>Thông báo đẩy</strong></td>
+  <td>Bật trong Cài đặt (cần có cấu hình đồng bộ ở trên)</td>
+  <td>Mã thiết bị do Firebase Cloud Messaging cấp được lưu vào Supabase của bạn để gửi nhắc việc. Mã này không chứa nội dung công việc.</td>
+</tr>
+
+<tr>
+  <td><strong>Gửi báo cáo qua Telegram</strong></td>
+  <td>Tự tạo bot Telegram và dán mã bot + mã nhóm</td>
+  <td>Nội dung báo cáo bạn chọn gửi, đi tới Telegram.</td>
+</tr>
+
+<tr>
+  <td><strong>Google Lịch / Gmail / Google Tài liệu</strong> (chỉ Android)</td>
+  <td>Bấm đăng nhập Google và đồng ý từng phạm vi truy cập</td>
+  <td>Ứng dụng đọc sự kiện lịch, thư gần đây hoặc tài liệu bạn chỉ định <strong>để chuyển thành việc</strong>. Dữ liệu đọc được <strong>chỉ xử lý trên máy bạn</strong>, chỉ rời máy nếu bạn yêu cầu AI xử lý (khi đó áp dụng mục Trợ lý AI ở trên). Nhà phát triển không nhận dữ liệu Google của bạn. Bạn có thể thu hồi quyền bất kỳ lúc nào tại trang Tài khoản Google của mình.</td>
+</tr>
+
+<tr>
+  <td><strong>Kiểm tra bảng tin</strong></td>
+  <td>Tự động, không cần bật</td>
+  <td>Ứng dụng <strong>tải về</strong> tệp thông báo công khai từ GitHub. Đây là yêu cầu một chiều: <strong>không gửi dữ liệu nào của bạn đi</strong>.</td>
+</tr>
+</table>
+
+<h2>4. Quyền thiết bị và lý do</h2>
+<table>
+<tr><th>Quyền</th><th>Dùng để làm gì</th></tr>
+<tr><td>Máy ảnh</td><td>Quét mã QR cấu hình và chụp ảnh để tạo việc. Ảnh không tự gửi đi đâu.</td></tr>
+<tr><td>Micrô</td><td>Nhập việc bằng giọng nói. Chỉ thu khi bạn đang giữ/bật nút ghi. Ứng dụng <strong>không lưu tệp âm thanh</strong>.</td></tr>
+<tr><td>Thông báo</td><td>Nhắc hạn chót, nhắc lịch, bản tin sáng.</td></tr>
+<tr><td>Sinh trắc học</td><td>Mở khoá ứng dụng bằng vân tay/khuôn mặt. Dữ liệu sinh trắc do hệ điều hành giữ, ứng dụng không đọc được.</td></tr>
+<tr><td>Khởi động cùng máy</td><td>Đặt lại các thông báo hẹn giờ sau khi khởi động lại thiết bị.</td></tr>
+<tr><td>Internet</td><td>Phục vụ đúng các tính năng tuỳ chọn ở mục 3.</td></tr>
+</table>
+
+<h2>5. Những thứ ứng dụng KHÔNG làm</h2>
+<ul>
+  <li>Không quảng cáo, không mạng quảng cáo, không mã theo dõi hành vi.</li>
+  <li>Không bán, không cho thuê, không chia sẻ dữ liệu của bạn cho bên thứ ba nào vì mục đích tiếp thị.</li>
+  <li>Không thu thập số liệu sử dụng hay thống kê ẩn danh về bạn.</li>
+  <li>Không đọc danh bạ, tin nhắn SMS, lịch sử cuộc gọi hay vị trí.</li>
+</ul>
+
+<h2>6. Xoá dữ liệu và xoá tài khoản</h2>
+<p><strong>Dữ liệu trên máy:</strong> gỡ ứng dụng là xoá sạch cơ sở dữ liệu cục bộ. Trong ứng dụng cũng có
+mục Sao lưu để tự xuất dữ liệu ra tệp trước khi xoá.</p>
+<p><strong>Tài khoản đồng bộ</strong> (chỉ tồn tại nếu bạn đã tự bật đồng bộ): vì tài khoản nằm trong
+dự án Supabase <strong>do bạn sở hữu</strong>, bạn xoá trực tiếp trong bảng điều khiển Supabase của mình —
+xoá người dùng là xoá luôn dữ liệu đã đồng bộ. Nếu bạn dùng cấu hình do nhà phát triển cung cấp và muốn
+xoá tài khoản cùng toàn bộ dữ liệu đã đồng bộ, gửi yêu cầu tới
+<a href="mailto:mittohoa@gmail.com">mittohoa@gmail.com</a> từ chính địa chỉ email đã đăng ký;
+yêu cầu được xử lý trong vòng 30 ngày.</p>
+<p><strong>Dữ liệu đã gửi cho nhà cung cấp AI hoặc Telegram:</strong> nằm ngoài tầm kiểm soát của ứng dụng —
+hãy yêu cầu trực tiếp dịch vụ đó theo chính sách của họ.</p>
+
+<h2>7. Trẻ em</h2>
+<p>Ứng dụng dành cho người trưởng thành đi làm, không hướng tới trẻ em và không cố ý thu thập dữ liệu
+của trẻ em.</p>
+
+<h2>8. Bảo mật</h2>
+<p>Dữ liệu cục bộ nằm trong vùng riêng của ứng dụng do hệ điều hành bảo vệ. Bạn có thể bật thêm khoá PIN
+và sinh trắc học. Cấu hình chia sẻ qua mã QR được mã hoá AES-GCM. Mọi kết nối ra ngoài đều qua HTTPS.
+Khoá API và mã bot bạn nhập được lưu trên thiết bị, không gửi cho nhà phát triển.</p>
+
+<h2>9. Thay đổi chính sách</h2>
+<p>Khi chính sách thay đổi, bản cập nhật được đăng tại chính trang này kèm ngày áp dụng mới. Thay đổi
+ảnh hưởng đáng kể tới dữ liệu sẽ được thông báo trong ứng dụng.</p>
+
+<footer>
+  WorkPilot AI · Liên hệ: <a href="mailto:mittohoa@gmail.com">mittohoa@gmail.com</a> · Cập nhật 11/09/2026
+</footer>
+
+</body>
+</html>
