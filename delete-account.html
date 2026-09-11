@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xoá tài khoản — WorkPilot AI</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px;
+         font: 16px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size: 1.7rem; margin-bottom: .2em; }
+  h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #8884; padding-bottom: .25em; }
+  .meta { color: #6b7280; font-size: .92rem; margin-top: 0; }
+  ol li, ul li { margin: .4em 0; }
+  code { background: #8882; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  .key { border-left: 4px solid #2563EB; background: #2563EB14; padding: 12px 16px; margin: 1.4em 0; }
+  .warn { border-left: 4px solid #F59E0B; background: #F59E0B14; padding: 12px 16px; margin: 1.4em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .94rem; }
+  th, td { border: 1px solid #8884; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #8881; }
+  footer { margin-top: 3em; color: #6b7280; font-size: .9rem; }
+  a { color: #2563EB; }
+</style>
+</head>
+<body>
+
+<h1>Xoá tài khoản</h1>
+<p class="meta"><strong>WorkPilot AI</strong> · com.mittohoa.workpilot_ai · Cập nhật 11/09/2026</p>
+
+<div class="key">
+  <strong>Tài khoản chỉ tồn tại nếu bạn đã tự bật Đồng bộ.</strong> WorkPilot AI dùng được đầy đủ
+  mà không cần đăng ký gì. Tài khoản chỉ sinh ra khi bạn chủ động bật đồng bộ nhiều thiết bị và
+  tạo tài khoản email/mật khẩu trong dự án Supabase của chính bạn.
+</div>
+
+<h2>Cách 1 — Xoá ngay trong ứng dụng (khuyên dùng)</h2>
+<ol>
+  <li>Mở <strong>Cài đặt → Đồng bộ</strong></li>
+  <li>Kéo xuống cuối thẻ “Đã đăng nhập”, chạm <strong>Xoá tài khoản</strong></li>
+  <li>Đọc phần giải thích, chạm <strong>Tiếp tục</strong></li>
+  <li>Gõ <code>XOA</code> để xác nhận lần cuối</li>
+</ol>
+<p>Ứng dụng sẽ xoá toàn bộ dữ liệu đã đồng bộ lên máy chủ rồi đăng xuất.</p>
+
+<div class="warn">
+  <strong>Nên xuất Sao lưu trước.</strong> Thao tác này không hoàn tác được.
+  Vào <em>Cài đặt → Sao lưu → Xuất ra tệp</em> và chép tệp đó ra khỏi máy.
+</div>
+
+<h2>Cách 2 — Gửi yêu cầu qua email</h2>
+<p>Nếu không mở được ứng dụng, gửi email tới
+<a href="mailto:mittohoa@gmail.com?subject=Yeu%20cau%20xoa%20tai%20khoan%20WorkPilot%20AI">mittohoa@gmail.com</a>
+<strong>từ chính địa chỉ email đã đăng ký</strong>, tiêu đề “Yêu cầu xoá tài khoản”.
+Yêu cầu được xử lý trong vòng <strong>30 ngày</strong>.</p>
+
+<h2>Những gì bị xoá</h2>
+<table>
+  <tr><th>Dữ liệu</th><th>Kết quả</th></tr>
+  <tr><td>Toàn bộ dữ liệu đã đồng bộ lên máy chủ — việc, việc con, phiên bấm giờ, dự án, loại việc, sổ tay, báo cáo, sự kiện, mục tiêu tuần, người &amp; phòng ban, mẫu việc, việc định kỳ, mã thiết bị nhận thông báo</td><td><strong>Xoá vĩnh viễn</strong></td></tr>
+  <tr><td>Tài khoản đăng nhập (email + mật khẩu)</td><td><strong>Xoá vĩnh viễn</strong><sup>*</sup></td></tr>
+  <tr><td>Dữ liệu trên thiết bị của bạn</td><td><strong>Vẫn còn</strong> — gỡ ứng dụng để xoá hẳn</td></tr>
+  <tr><td>Ảnh đính kèm</td><td>Vốn chỉ nằm trên máy, chưa bao giờ được đồng bộ</td></tr>
+</table>
+
+<p><sup>*</sup> Vì mỗi người dùng tự vận hành dự án Supabase của riêng mình, việc xoá tài khoản
+đăng nhập cần hàm <code>delete_my_account()</code> đã được cài trên dự án đó (tệp
+<code>docs/supabase-delete-account.sql</code> đi kèm mã nguồn). Nếu chưa cài, ứng dụng vẫn xoá
+sạch toàn bộ dữ liệu và đăng xuất, còn tài khoản đăng nhập rỗng thì bạn xoá trong bảng điều
+khiển Supabase của mình, mục <em>Authentication → Users</em>.</p>
+
+<h2>Thời gian lưu giữ</h2>
+<p>Không có thời gian lưu giữ thêm: dữ liệu bị xoá <strong>ngay lập tức</strong> khỏi cơ sở dữ
+liệu. Nhà phát triển <strong>không giữ bản sao nào</strong> — dữ liệu nằm trong dự án Supabase
+do chính bạn sở hữu, không đi qua máy chủ nào của chúng tôi.</p>
+
+<h2>Dữ liệu đã gửi cho bên thứ ba</h2>
+<p>Nếu bạn từng dùng tính năng AI, nội dung đã gửi tới nhà cung cấp bạn chọn (Google Gemini,
+Groq, OpenRouter hoặc OpenAI) nằm ngoài tầm kiểm soát của ứng dụng. Hãy yêu cầu trực tiếp dịch
+vụ đó theo chính sách của họ. Tương tự với nội dung bạn đã gửi qua Telegram.</p>
+
+<footer>
+  WorkPilot AI · <a href="index.html">Trang chủ</a> ·
+  <a href="privacy.html">Chính sách quyền riêng tư</a> ·
+  Liên hệ: <a href="mailto:mittohoa@gmail.com">mittohoa@gmail.com</a>
+</footer>
+
+</body>
+</html>
