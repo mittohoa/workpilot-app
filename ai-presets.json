@@ -1,30 +1,28 @@
 {
-  "_readme": "Preset model AI cho WorkPilot — app tải file này từ repo mittohoa/workpilot-app (cạnh announcements.json). Sửa file ở repo đó là mọi máy thấy ngay, KHÔNG cần release app. provider: 'gemini' | 'openai' (openai-compatible). baseUrl rỗng với Gemini.",
+  "_readme": "Preset model AI cho WorkPilot — app tải file này từ repo mittohoa/workpilot-app (cạnh announcements.json). Sửa file ở repo đó là mọi máy thấy ngay, KHÔNG cần release app. provider: 'gemini' | 'openai' (openai-compatible). baseUrl rỗng với Gemini.  ⚠️ Nhà cung cấp free ĐỔI/BỎ model liên tục — Groq đã bỏ toàn bộ họ Llama (13/09/2026: llama-3.3-70b-versatile, llama-4-scout, llama-4-maverick đều trả 404 model_not_found). Kiểm lại file này bằng `python tool/check_presets.py` trong repo workpilot-ai trước khi tin vào nó.",
   "presets": [
     {
-      "label": "Groq · Llama 3.3 70B",
-      "note": "Đọc chữ, mạnh · free",
+      "label": "Groq · GPT-OSS 120B",
+      "note": "Đọc chữ, mạnh nhất trên Groq · free",
       "provider": "openai",
       "baseUrl": "https://api.groq.com/openai/v1",
-      "model": "llama-3.3-70b-versatile",
+      "model": "openai/gpt-oss-120b",
       "free": true
     },
     {
-      "label": "Groq · Llama 4 Scout",
-      "note": "Đọc ảnh + chữ · free · nhanh",
+      "label": "Groq · GPT-OSS 20B",
+      "note": "Nhẹ, nhanh — cho việc nhẹ · free",
       "provider": "openai",
       "baseUrl": "https://api.groq.com/openai/v1",
-      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
-      "vision": true,
+      "model": "openai/gpt-oss-20b",
       "free": true
     },
     {
-      "label": "Groq · Llama 4 Maverick",
-      "note": "Đọc ảnh + chữ · free · mạnh hơn",
+      "label": "Groq · Qwen3 27B",
+      "note": "Tiếng Việt khá · free",
       "provider": "openai",
       "baseUrl": "https://api.groq.com/openai/v1",
-      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
-      "vision": true,
+      "model": "qwen/qwen3.8-27b",
       "free": true
     },
     {
@@ -46,20 +44,11 @@
       "free": true
     },
     {
-      "label": "Gemini 2.0 Flash",
-      "note": "Đọc ảnh + chữ · free (nếu chưa bị khoá)",
-      "provider": "gemini",
-      "baseUrl": "",
-      "model": "gemini-2.0-flash",
-      "vision": true,
-      "free": true
-    },
-    {
-      "label": "OpenRouter · Llama 3.2 Vision",
-      "note": "Đọc ảnh · có bản free",
+      "label": "OpenRouter · Ling 3.0 Flash VL",
+      "note": "Đọc ảnh · bản free",
       "provider": "openai",
       "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "meta-llama/llama-3.2-11b-vision-instruct",
+      "model": "inclusionai/ling-3.0-flash-vl:free",
       "vision": true
     },
     {
@@ -69,6 +58,14 @@
       "baseUrl": "https://api.openai.com/v1",
       "model": "gpt-4o-mini",
       "vision": true
+    },
+    {
+      "label": "OpenRouter · Gemini 2.5 Flash-Lite",
+      "note": "Đọc ảnh, rẻ & ổn định · trả phí rất thấp",
+      "provider": "openai",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "google/gemini-2.5-flash-lite",
+      "free": false
     }
   ]
 }
