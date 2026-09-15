@@ -1,5 +1,12 @@
 {
-   "announcements": [
+  "announcements": [
+    {
+      "id": "release-1.3.16",
+      "title": "📣 Đã có bản 1.3.16",
+      "body": "App tự điền ước lượng thời gian cho việc mới, dựa trên các việc cùng loại bạn đã bấm giờ — không phải gõ gì, chạm vào để chỉnh. Trợ lý cũng hiểu lệnh \"mở ...\" đúng hơn.\n\nWindows: bản cài qua Setup.exe tự cập nhật (tải 3,3 MB). Bản portable (.zip) phải tải lại tay.\nAndroid: bản trên Google Play đang chờ duyệt.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.16"
+    },
     {
       "id": "welcome-2026-06-26",
       "title": "🎉 Chào mừng đến với WorkPilot",
