@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "release-1.3.19",
+      "title": "📣 Đã có bản 1.3.19",
+      "body": "Mới: Định hướng tuần — đầu tuần đặt 3–5 mục tiêu (gắn việc thật hoặc chỉ tiêu số), app tự tính tiến độ, quy ra nhịp mỗi ngày, nhắc khi tụt nhịp và cuối tuần chấm điểm.\n\nMới: Mảng công việc — đánh dấu Loại việc là mảng chính hay hỗ trợ; báo cáo tách hai phần và xuất được riêng từng mảng.\n\nMới: Phát triển cá nhân — mục tiêu ngoài công việc, chia mốc, đếm chuỗi ngày, nhắc luyện mỗi ngày.\n\nBản này còn gồm phần của 1.3.18 mà máy Windows chưa nhận: để app mở cả ngày vẫn có báo cáo ngày, lỡ cuối tuần không mất báo cáo tuần, và phần Nhìn lại tháng/quý hết so lệch kỳ.\n\nWindows: bản cài qua Setup.exe tự cập nhật (tải khoảng 4,5 MB). Bản portable (.zip) phải tải lại tay.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.19"
+    },
+    {
       "id": "release-1.3.17",
       "title": "📣 Đã có bản 1.3.17",
       "body": "Mới: Thống kê công việc (Báo cáo → Bảng số) — kỳ đó đã làm gì, mới nhận gì, việc tồn nào chưa đụng tới, gom theo dự án kèm số đầu việc · số lượng · giờ. Số lượng nhập lúc dừng bấm giờ nay đi đúng việc khi bạn gắn việc sau, dữ liệu cũ tự sửa khi mở app. Báo cáo soi lại con số AI viết và nói rõ khi AI hết hạn mức.\n\nWindows: bản cài qua Setup.exe tự cập nhật (tải khoảng 4,5 MB). Bản portable (.zip) phải tải lại tay.\nAndroid: bản này chưa lên Google Play.",
