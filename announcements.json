@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "release-1.3.24",
+      "title": "📣 Đã có bản 1.3.24",
+      "body": "Định hướng tuần: đặt mục tiêu giờ là CHỌN VIỆC, không phải chọn kiểu.\n\n• Hộp đặt mục tiêu hỏi đúng hai thứ: tên mục tiêu và việc nào thuộc về nó (chọn nhiều việc, có ô tìm kiếm). Tiến độ = số việc đã xong / số việc đã gắn.\n• Không phải chọn \"Tự đánh dấu / Chỉ tiêu số\" nữa: gắn việc thì đo bằng việc, không gắn gì thì bạn tự tick. Chỉ tiêu số lùi vào mục nâng cao.\n• Mục tiêu đã tạo nay sửa được việc đã gắn và đổi tên ngay trên dòng.\n\nKho tính năng: hết kê trùng công cụ vừa \"đang có việc\" vừa \"hay dùng\".\n\nWindows: bản cài qua Setup.exe tự cập nhật (tải khoảng 4,5 MB). Bản portable (.zip) phải tải lại tay.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.24"
+    },
+    {
       "id": "release-1.3.23",
       "title": "📣 Đã có bản 1.3.23",
       "body": "Màn Ghi nhanh dựng lại cho bớt rối:\n\n• Hạn và Ưu tiên nay nằm ngay dưới ô tiêu đề, đặt hạn một chạm (Hôm nay · Mai · Thứ 2).\n• Ba tầng: Nhanh → Phân loại → Ghi chú, hai tầng dưới thu gọn nhưng có dòng tóm tắt nên nhìn là biết đã điền gì.\n• Loại việc · dự án · nhãn không còn rải thành chip kín màn, mà là một dòng mở bảng chọn có tìm kiếm — nhiều dự án hay nhiều nhãn cũng không rối.\n\nSửa: khi khoá AI hết hạn mức, màn Ghi nhanh liên tục bắn thanh báo lỗi đỏ mỗi lần bạn ngừng gõ. Nay lượt tự động hỏng thì im lặng và tạm tắt cho tới khi bạn tự bấm nút AI.\n\nWindows: bản cài qua Setup.exe tự cập nhật (tải khoảng 4,5 MB). Bản portable (.zip) phải tải lại tay.",
