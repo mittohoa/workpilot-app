@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "release-1.3.25",
+      "title": "📣 Đã có bản 1.3.25",
+      "body": "Đổi máy không còn mất hai thứ:\n\n• Loại việc bạn đã \"bỏ khỏi báo cáo chung\" giờ đi theo bạn — trước đây máy khác không biết nên báo cáo bên đó gộp lại đúng thứ bạn đã cố ý loại ra.\n• Việc nháp chờ duyệt cũng vậy — trước đây máy khác kéo về thành việc thật, nằm lẫn trong danh sách mà chưa ai duyệt.\n\n\"Hỗ trợ\" chỉ phải đánh dấu MỘT lần: đánh dấu mảng hỗ trợ là báo cáo gửi lãnh đạo tự gom vào mục Công tác hỗ trợ. Nhãn Đối tác / Cơ sở nằm luôn trong màn Mảng công việc. Dữ liệu cũ giữ nguyên cách gom.\n\nMảng công việc: chạm đổi mảng chính/hỗ trợ nay có thông báo và Hoàn tác — chạm nhầm không còn âm thầm xếp lại báo cáo.\n\nKho tính năng: bấm × ở ô tìm nay xoá cả chữ trong ô.\n\nTrợ lý AI: lời trợ lý hiện đúng dạng (chữ đậm là đậm, danh sách là danh sách) thay vì bày ra các dấu sao.\n\nWindows: bản cài qua Setup.exe tự cập nhật (tải khoảng 3,7 MB). Bản portable (.zip) phải tải lại tay.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.25"
+    },
+    {
       "id": "release-1.3.24",
       "title": "📣 Đã có bản 1.3.24",
       "body": "Định hướng tuần: đặt mục tiêu giờ là CHỌN VIỆC, không phải chọn kiểu.\n\n• Hộp đặt mục tiêu hỏi đúng hai thứ: tên mục tiêu và việc nào thuộc về nó (chọn nhiều việc, có ô tìm kiếm). Tiến độ = số việc đã xong / số việc đã gắn.\n• Không phải chọn \"Tự đánh dấu / Chỉ tiêu số\" nữa: gắn việc thì đo bằng việc, không gắn gì thì bạn tự tick. Chỉ tiêu số lùi vào mục nâng cao.\n• Mục tiêu đã tạo nay sửa được việc đã gắn và đổi tên ngay trên dòng.\n\nKho tính năng: hết kê trùng công cụ vừa \"đang có việc\" vừa \"hay dùng\".\n\nWindows: bản cài qua Setup.exe tự cập nhật (tải khoảng 4,5 MB). Bản portable (.zip) phải tải lại tay.",
