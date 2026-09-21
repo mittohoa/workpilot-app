@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "release-1.3.22",
+      "title": "📣 Đã có bản 1.3.22",
+      "body": "Sửa những chỗ bấm mà không thấy gì xảy ra:\n\n• Bộ lọc: chọn \"Tất cả\" / \"Mọi loại\" ở màn Công việc và Lịch sử nay bỏ lọc thật.\n• Chạm lại tab đang đứng nay quay về màn gốc của tab đó.\n• Hộp chọn nhóm mảng: bấm lại đúng nhóm đang chọn, và bấm Lưu khi để trống không còn làm mất nhóm.\n\nKho tính năng dễ tìm hơn: công cụ đang có việc tự nổi lên kèm con số, gợi ý theo giờ, nút xem tất cả, và tìm kiếm bỏ dấu (gõ \"bao cao\" cũng ra \"Mẫu báo cáo\").\n\nWindows: bản cài qua Setup.exe tự cập nhật (tải khoảng 4,5 MB). Bản portable (.zip) phải tải lại tay.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.22"
+    },
+    {
       "id": "release-1.3.21",
       "title": "📣 Đã có bản 1.3.21",
       "body": "Mới: Nhóm mảng công việc — mỗi Loại việc xếp được vào một nhóm bạn tự đặt tên (Dev · Văn thư · Hợp tác quốc tế…), không giới hạn số nhóm. Màn Mảng công việc thêm ô chuyển Chính/Hỗ trợ ↔ Theo nhóm, và báo cáo xuất riêng được theo từng nhóm.\n\nCũng sửa được ngay tên/màu/icon loại việc tại màn đó, khỏi vòng sang Cài đặt.\n\nSửa lỗi nặng: đổi một thứ trên máy, bấm xong nhìn lại thấy y như cũ — thay đổi bị chính vòng đồng bộ hoàn tác khi máy chủ chưa có cột tương ứng. Nay bằng mốc thời gian thì không ghi đè nữa.\n\nWindows: bản cài qua Setup.exe tự cập nhật (tải khoảng 4,5 MB). Bản portable (.zip) phải tải lại tay.",
