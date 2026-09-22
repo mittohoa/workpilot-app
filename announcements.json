@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "release-1.3.34",
+      "title": "📣 Đã có bản 1.3.34",
+      "body": "BÁO CÁO TUẦN TỰ ĐỘNG có lúc không được lưu.\n\nNếu bạn bật \"Tự động tạo báo cáo\", có lúc màn Báo cáo hiện một lỗi kỹ thuật thay vì bài báo cáo, và bản báo cáo tuần không được lưu — kéo theo bản riêng cho từng nhóm mảng (mới có ở 1.3.32) cũng không bao giờ tới.\n\nLỗi chỉ xảy ra với báo cáo do app tự sinh chạy nền. Bạn tự bấm tạo báo cáo thì lần nào cũng ra bình thường — nên rất khó thấy. Tìm ra khi thử trên máy thật.\n\nRIÊNG BẢN WINDOWS 1.3.34 còn sửa thêm: đồng bộ có thể im lặng bỏ qua cả một bảng — dự án, cần xem lại, việc định kỳ, việc con, sổ tay tri thức — mà vẫn báo \"đã đồng bộ xong\", chỉ lộ ra khi bạn đổi máy. Phần này tới Android ở bản kế tiếp.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.34"
+    },
+    {
       "id": "release-1.3.33",
       "title": "📣 Đã có bản 1.3.33",
       "body": "Hai loại việc TRÙNG TÊN không còn đội mảng của nhau — ở hai chỗ còn lại.\n\nBản 1.3.27 đã sửa chuyện này ở báo cáo chính. Nhưng soi lại thì còn hai chỗ tự gom theo kiểu \"loại nào đọc sau thì thắng\": bản xem nhanh trong màn Báo cáo, và bản tin tuần. Hai bản đó còn không in dòng \"chưa tách được\" — tức số sai mà im lặng.\n\nNay cả ba nơi dựng báo cáo dùng một cách gom duy nhất, kèm phép kiểm tự động chặn việc lại tự viết riêng một cách gom nữa.\n\nNói thẳng cho rõ: đây là CÙNG một lỗi với bản trước, lần đó mới vá một trong ba chỗ.",
