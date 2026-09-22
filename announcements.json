@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "release-1.3.30",
+      "title": "📣 Đã có bản 1.3.30",
+      "body": "Gõ KHÔNG DẤU giờ tìm được ở mọi ô.\n\nBản trước sửa ô Lọc nhanh ở màn Công việc; soi tiếp thì còn bốn ô nữa cùng lỗi:\n• Chọn người yêu cầu / phòng ban — gõ \"hoa\" ra rỗng\n• Chọn dự án — gõ \"bao cao\" không ra \"Báo cáo cuối năm\"\n• Gợi ý khi ghi nhanh — gõ \"duc\" không ra \"Đức\"\n• Gắn việc vào phiên bấm giờ\n\nRiêng ô chọn người yêu cầu thì hậu quả nặng hơn bất tiện: tìm không ra nên app mời \"Dùng hoa\", rồi bạn tạo trùng một người đã có. Từ nay không sinh thêm; mấy bản trùng cũ thì bạn tự dọn, app không dám tự gộp tên người.\n\nHộp chọn ngày giờ là tiếng Việt: Chọn phạm vi · Ngày bắt đầu – Ngày kết thúc · Lưu · tháng 9 năm 2026, và tuần bắt đầu THỨ HAI (trước hiện \"Select range\", \"Save\", tuần bắt đầu Chủ nhật). Áp cho cả 10 màn có chọn ngày.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.30"
+    },
+    {
       "id": "release-1.3.29",
       "title": "📣 Đã có bản 1.3.29",
       "body": "Bộ lọc ở màn Công việc — hai chỗ hỏng, tìm ra khi soi trên bản Windows.\n\n• Lọc theo DỰ ÁN giờ mới thật sự lọc. Trước đây chọn dự án thì chip sáng lên, con số bộ lọc tăng, mà danh sách không đổi — bộ lọc chưa hề được nối vào truy vấn, tức là một cái nút giả suốt từ khi có.\n\n• Ô \"Lọc nhanh\" giờ gõ KHÔNG DẤU vẫn ra. Gõ \"bao cao\" trước đây báo không tìm thấy việc nào, dù ngay trên danh sách có \"Báo cáo công tác tháng 9/26\"; gõ \"báo cáo\" chữ thường cũng trượt. Nay bỏ dấu, không phân biệt hoa/thường, không cần đúng thứ tự từ — giống ô tìm trong Tất cả tính năng — và khớp thêm cả loại việc.",
