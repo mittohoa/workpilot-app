@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "release-1.3.32",
+      "title": "📣 Đã có bản 1.3.32",
+      "body": "MỚI: báo cáo định kỳ xuất thêm bản riêng cho từng nhóm mảng.\n\nAi phải gửi báo cáo riêng cho từng đầu mối — Dev một bản, Hành chính một bản — thì bản chung không dùng được: mỗi tuần lại phải tự cắt ra. Nay bật một công tắc là báo cáo TUẦN tự động có thêm một bản cho mỗi nhóm, ngoài bản chung. Mỗi bản có sẵn dòng \"Chỉ gồm nhóm Dev\" ở đầu nên không lẫn vào nhau.\n\nBật ở: Cài đặt › Tự động tạo báo cáo › Thêm bản riêng cho từng nhóm mảng.\n\n• Mặc định TẮT — mỗi tuần thêm N bản chỉ đáng với ai cần\n• Cần từ HAI nhóm trở lên; đặt nhóm ở Kho tính năng › Mảng công việc › Theo nhóm\n• Chỉ báo cáo tuần, không nhân theo ngày\n• Nhóm chỉ còn mảng đã lưu trữ hoặc đã tắt \"gộp vào báo cáo chung\" thì bỏ qua, khỏi ra bản rỗng\n\nSửa kèm: bản báo cáo theo nhóm/mảng không còn mang bảng chấm Định hướng tuần của TOÀN BỘ tuần — mục tiêu tuần không chia theo mảng, nên để nó trong một bản ghi \"chỉ gồm nhóm Dev\" là đặt số của cả tuần dưới một cái nhãn hẹp.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.32"
+    },
+    {
       "id": "release-1.3.31",
       "title": "📣 Đã có bản 1.3.31",
       "body": "Trợ lý hiểu \"tôi muốn check-in bằng giọng nói\".\n\nTrước đây nói câu đó thì trợ lý thỉnh thoảng không làm gì — bạn gọi đúng tên tính năng mà máy không nhận ra, lần sau thử lại thì được, nên rất dễ tưởng mình gõ sai. Lý do: app chỉ nhận câu bắt đầu bằng mở / xem / vào / bật, còn câu trên thì bị giao cho AI — và AI không ổn định ở chỗ này.\n\nNay:\n• \"tôi muốn…\" và \"tôi cần…\" cũng dẫn tới màn tương ứng\n• check-in, check in, checkin — kèm hoặc không kèm \"bằng giọng nói\" — viết kiểu nào cũng nhận\n• Không tốn lượt AI, nên không còn lúc được lúc không\n\nVẫn an toàn: mấy chữ muốn/cần chỉ mở cửa đi tìm tên màn, nên \"tôi muốn tạo việc gọi anh A\" hay \"mượn phòng họp chiều mai\" vẫn đi đường cũ.",
