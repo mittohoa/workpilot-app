@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "release-1.3.28",
+      "title": "📣 Đã có bản 1.3.28",
+      "body": "Hai chỗ ở Định hướng tuần, cả hai đều sai âm thầm — app chạy bình thường nên không ai để ý.\n\n• Bỏ một việc khỏi mục tiêu tuần, hôm sau mở lên thấy nó quay lại: app xoá liên kết mà không để lại dấu xoá, nên máy khác đẩy ngược về. Đã sửa; gắn lại việc từng bỏ cũng không sinh dòng trùng nữa.\n\n• Mục tiêu gắn với việc không còn tự nhảy sang \"đã xong\" khi việc còn dở bị xoá. Trước đây mẫu số tự teo (3/5 → 3/4 → 3/3 = xong) cho một mục tiêu bạn chưa hề làm xong, mà con số đó còn chảy vào điểm tuần và báo cáo. Nay app nói thẳng \"N việc đã gắn không còn\" và không tính là hoàn thành — sửa lại danh sách việc ở dấu ⋮ › Gắn việc là hết cảnh báo.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.28"
+    },
+    {
       "id": "release-1.3.27",
       "title": "📣 Đã có bản 1.3.27",
       "body": "Báo cáo gửi lãnh đạo giờ biết tới \"nhóm mảng\".\n\nBạn xếp loại việc vào nhóm (Dev · Hành chính · Điều phối…) ở Mảng công việc, nhưng bản báo cáo AI viết — bản thật sự gửi đi — trước đây không hề biết mấy nhóm đó.\n\n• Có từ hai nhóm trở lên: báo cáo thêm dòng \"Theo nhóm mảng\" ngay sau KPI, hai bảng chính ưu tiên ghi tên nhóm.\n• Giờ của từng nhóm do app tính sẵn rồi đưa cho AI, kèm yêu cầu không tự cộng lại — số trong báo cáo phải là số thật.\n\nBỏ một ô chọn không còn tác dụng: Cài đặt › Loại việc vẫn mời chọn \"Công tác hỗ trợ\", nhưng báo cáo lấy dấu hỗ trợ ở màn Mảng công việc — chọn ở đó là app lưu rồi báo cáo bỏ qua. Nay ô đó chỉ còn Thường / Đối tác – Cơ sở, kèm dòng chỉ sang đúng chỗ.\n\nHai loại việc trùng tên không còn đội mảng của nhau: báo cáo nói thẳng \"chưa tách được\" kèm cách chữa, thay vì đưa một con số không đứng vững.",
