@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "release-1.3.40",
+      "title": "📣 Đã có bản 1.3.40",
+      "body": "PHẦN NHẮC VIỆC — gồm một bản sửa có thể bạn đã gặp mà tưởng do mình quên đặt nhắc.\n\nSỬA — VIỆC GẤP NHẤT LẠI LÀ VIỆC KHÔNG ĐƯỢC NHẮC:\nApp nhắc trước hạn theo số giờ bạn đặt, mặc định 24 giờ. Nhưng nếu mốc nhắc đó đã trôi qua thì nó bỏ luôn, không nhắc gì cả — tức ghi “họp 15h chiều nay” lúc 9h sáng là im lặng, vì hạn đã nằm trong khung 24 giờ. Việc càng gấp thì càng chắc chắn không được nhắc, mà mục nhắc trong Cài đặt vẫn bật nên trông như đang chạy bình thường.\nNay nhắc ngay, kèm còn bao lâu: “GẤP — sắp đến hạn ⏰ · Chốt số liệu · còn 6 giờ”. Áp cho cả việc và việc con.\n\nMỚI — NHẮC VIỆC ĐÃ QUÁ HẠN: 8h sáng mỗi ngày MỘT thông báo gộp, quá hạn lâu nhất lên trước. Trước đây app không hề nhắc quá hạn — nhắc trước hạn bắn một lần rồi thôi. Gộp một cái chứ không mỗi việc một thông báo: 12 việc quá hạn thành 12 thông báo là thứ người ta tắt luôn cả nhóm.\n\nMỚI — NHẮC RIÊNG TỪNG VIỆC: mở một việc → “Nhắc lúc” → chọn ngày và GIỜ. Độc lập với hạn chót, và là đường duy nhất nhắc được việc KHÔNG có hạn — việc cần làm ngay nhưng không phải deadline. Tắt công tắc “nhắc trước hạn” thì vẫn nhắc, vì đây là mốc bạn đặt tay. Đồng bộ đa thiềt bị.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.40"
+    },
+    {
       "id": "release-1.3.39",
       "title": "📣 Đã có bản 1.3.39",
       "body": "BÁO CÁO TUẦN TỰ ĐỘNG giờ dùng được MẪU BẠN CHỌN.\n\nMấy bản gần đây thêm khá nhiều mục cho báo cáo — cây bóc việc theo mảng › dự án › việc › việc con, Cần cấp trên lưu ý, Tiếp nhận yêu cầu, Sản lượng theo nhãn, Tiến triển dự án. Nhưng tất cả chỉ ra khi bạn TỰ VÀO xuất theo mẫu; còn bài tự sinh mỗi tuần thì **không có mục nào trong số đó**.\n\nNay vào Cài đặt › Tự động tạo báo cáo › Mẫu cho báo cáo tuần tự động, chọn một mẫu (ví dụ “Báo cáo tuần cá nhân”) là sáng thứ Hai bài đã sẵn đúng dạng, khỏi bấm.\n\n• Chưa chọn thì không đổi gì — giữ nguyên bản dựng sẵn.\n• Mẫu bị xoá thì lùi về bản dựng sẵn, không để tuần đó mất báo cáo.\n• Vẫn đi qua ngân sách lượt AI trong ngày như mọi thứ app tự gọi; hết ngân sách thì lưu bản dựng từ dữ liệu trên máy.",
