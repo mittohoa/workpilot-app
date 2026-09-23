@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "release-1.3.37",
+      "title": "📣 Đã có bản 1.3.37",
+      "body": "BÁO CÁO TUẦN GỬI LÃNH ĐẠO giờ ra gần đủ bài.\n\nMẫu cũ chỉ có phần nhìn lại — đã xong, quá hạn, đang kẹt. Thiếu hẳn hai mục người đọc quan tâm nhất: thứ cần họ quyết, và kỳ tới làm gì.\n\nMỚI — CẦN CẤP TRÊN LƯU Ý: mỗi dòng nói rõ vướng gì, vì một danh sách tên việc thì người đọc không biết phải quyết cái gì. Ba loại: đang chờ ai đó (từ 3 ngày) · quá hạn mà ưu tiên cao · đã nhận nhưng chưa có kế hoạch. Vừa chờ một hai ngày thì chưa báo lên — báo hết là làm loãng đúng mục cần đọc kỹ.\n\nMỚI — TRỌNG TÂM KỲ TỚI: gom theo đơn vị / phòng ban, gồm việc có hạn rơi vào kỳ sau cộng việc bạn đã ghim. Việc không ghi đơn vị vẫn hiện, dồn xuống nhóm cuối — bỏ đi là báo cáo thiếu việc mà không ai biết.\n\nMỚI — CHỖ GHI TIẾN TRIỂN cho từng dự án mỗi kỳ: trạng thái, dấu hướng ↑ ↓ → ✦, ghi chú. Đó là phần đánh giá của bạn — không con số nào trong app nói được “Đang chạy (trễ)” hay “Chờ đối tác”. Màn ghi hiện lại thứ kỳ trước đã ghi, và ⏱ tuần N tính sẵn. Chưa ghi gì thì app mời ghi lúc bấm xuất báo cáo — chỉ mời khi trống — và bỏ qua thì vẫn có bài để gửi. Đồng bộ đa thiềt bị.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.37"
+    },
+    {
       "id": "release-1.3.36",
       "title": "📣 Đã có bản 1.3.36",
       "body": "MƯỜI MỘT bản sửa, tất cả cùng một họ: app hỏng mà không kêu. Ba trong số đó mất dữ liệu thật.\n\nĐỒNG BỘ — hai chỗ mất dữ liệu:\n• Sửa việc đúng lúc đang đồng bộ thì bản sửa đó có thể **không bao giờ lên máy chủ**. Nó nằm lại trên máy này, chỉ lộ khi bạn đổi máy — lúc đó không còn cách nào biết đã mất những gì.\n• Việc con và phiên bấm giờ về trước việc cha thì rơi mất hẳn. Nay app áp lại sau khi cả lượt đã về.\n\nAPP NÓI THẬT HƠN: bản tin tuần không còn giấu việc thiếu phần AI; Ghi nhanh thôi nói \"trong nội dung này không có gì\" khi thực ra máy đọc hỏng; cập nhật Windows nói rõ khi phải tải bản đầy đủ thay vì bản nhỏ.\n\nĐOÁN SÁT HƠN, TỐN ÍT HƠN: Ghi nhanh tự điền loại **theo việc cũ của bạn**, không tốn lượt AI — đây là chỗ tốn hạn mức nhất vì gắn vào việc bạn làm nhiều nhất trong ngày. Mức ưu tiên không hỏi AI nữa, đọc thẳng từ câu bạn gõ.\n\nDÒ TRÙNG VIỆC bớt mời gộp hai việc khác nhau — trước đây \"Gửi báo cáo cho sếp\" và \"Gửi tài liệu cho khách\" chung hai âm tiết là đủ bị gọi là trùng. Và giờ bắt được bản gõ thiếu dấu.",
