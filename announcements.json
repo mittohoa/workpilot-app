@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "release-1.3.39",
+      "title": "📣 Đã có bản 1.3.39",
+      "body": "BÁO CÁO TUẦN TỰ ĐỘNG giờ dùng được MẪU BẠN CHỌN.\n\nMấy bản gần đây thêm khá nhiều mục cho báo cáo — cây bóc việc theo mảng › dự án › việc › việc con, Cần cấp trên lưu ý, Tiếp nhận yêu cầu, Sản lượng theo nhãn, Tiến triển dự án. Nhưng tất cả chỉ ra khi bạn TỰ VÀO xuất theo mẫu; còn bài tự sinh mỗi tuần thì **không có mục nào trong số đó**.\n\nNay vào Cài đặt › Tự động tạo báo cáo › Mẫu cho báo cáo tuần tự động, chọn một mẫu (ví dụ “Báo cáo tuần cá nhân”) là sáng thứ Hai bài đã sẵn đúng dạng, khỏi bấm.\n\n• Chưa chọn thì không đổi gì — giữ nguyên bản dựng sẵn.\n• Mẫu bị xoá thì lùi về bản dựng sẵn, không để tuần đó mất báo cáo.\n• Vẫn đi qua ngân sách lượt AI trong ngày như mọi thứ app tự gọi; hết ngân sách thì lưu bản dựng từ dữ liệu trên máy.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.39"
+    },
+    {
       "id": "release-1.3.38",
       "title": "📣 Đã có bản 1.3.38",
       "body": "BÁO CÁO TUẦN CÁ NHÂN giờ ra đủ các mục bạn vẫn phải gõ tay.\n\nMỚI — ĐẦU NGÀY CẢNH BÁO DỮ LIỆU HÔM QUA CÒN THIẾU:\nTrước đây cả app chỉ có một phép kiểm (“N phiên chưa gắn việc”). Chỗ nào thiếu loại việc, thiếu dự án, thiếu bên yêu cầu thì không ai nói — rồi báo cáo tuần trông lệch mà không biết tại đâu. Nay màn Kế hoạch ngày có thẻ nhắc ở trên cùng, soi HÔM QUA — đúng ca cuối ngày chưa tổng kết kịp. Sáu loại, mỗi dòng nói rõ nó làm lệch báo cáo ra sao, và BẤM VÀO LÀ SỬA ĐƯỢC NGAY.\nKhông đòi thứ bạn không dùng: chưa tạo dự án thì không đòi gắn dự án; việc thuộc mảng chính không bị đòi bên yêu cầu. Sạch thì thẻ ẩn hẳn.\n\nMỚI — BÁO CÁO BÓC THEO CÂY: MẢNG › DỰ ÁN › VIỆC › VIỆC CON.\nĐó là cách bạn gom việc, nhưng mọi cách nhóm trước đây đều PHẲNG — bảng theo loại việc in một dòng đếm, danh sách việc xong in tên rời không nhóm. Nay bóc đủ bốn tầng, mỗi việc kèm số lượng + đơn vị và giờ đã bấm.\nGồm CẢ VIỆC KHÔNG BẤM GIỜ — đếm theo giờ thì rụng hết việc vụn (cấp tài khoản, xuất dữ liệu, cấp quyền), mà đó lại là phần nhiều dòng nhất.\n\nMỚI — ba mục nừa: Cần cấp trên lưu ý (mỗi dòng nói rõ vướng gì) · Tiếp nhận yêu cầu (gom theo đơn vị đề nghị) · Trọng tâm kỳ tới.\n\nMỚI — Sản lượng tách theo nhãn rồi mới cộng tổng: “TK — tổng 54 / GVTG 39 / Sinh viên 14 / Học viên 1”. Khối cũ gộp hết theo đơn vị nên chỉ ra “54 TK”.\n\nSỬA — đặt nhóm mảng không còn làm mất tên loại việc trong báo cáo: nay ghép hai cấp trên một dòng (“Vận hành hệ thống › Hỗ trợ”).",
