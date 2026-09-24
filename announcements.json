@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "release-1.3.42",
+      "title": "📣 Đã có bản 1.3.42",
+      "body": "SỐ GIỜ BÁO TRƯỚC RIÊNG TẮNG VIỆC.\n\nNhắc trước hạn vẫn tính bằng hạn chót trừ số giờ báo trước — nhưng số giờ ấy trước nay dùng CHUNG cho cả app, mặc định 24 giờ. Một con số cho mọi thứ thì không con số nào đúng: việc phải chuẩn bị cả tuần mà nhắc trước 24 giờ là đã muộn, còn \"gọi anh A\" thì nhắc trước 24 giờ là quá sớm, tới lúc cần thì đã quên.\n\nNay mở một việc CÓ HẠN CHÓT → \"Báo trước\" → chọn: đúng lúc đến hạn · 1–12 giờ · 1–3 ngày · 1 tuần. Hoặc để \"theo Cài đặt\" như cũ.\n\n• DỌI HẠN THÌ MỐC NHẮC TỰ DỌI THEO — đây là chỗ nó khác \"Nhắc lúc\" ở bản trước: \"Nhắc lúc\" là một mốc cố định bạn đặt tay, dời hạn xong phải vào sửa lại. Hai cái dùng được cùng lúc.\n• Việc con dùng theo việc cha — một việc cần chuẩn bị cả tuần thì các bước của nó cũng cần báo sớm như thế.\n• Chưa đặt thì để trống, dòng đó hiện mờ \"theo Cài đặt (24 giờ)\" — để bạn thấy ngay đây là số đi mượn chứ không phải số của việc này. Và vì để trống, hôm nào bạn đổi số chung ở Cài đặt thì mọi việc chưa đặt riêng đổi theo luôn.\n• Đồng bộ đa thiết bị.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.42"
+    },
+    {
       "id": "release-1.3.41",
       "title": "📣 Đã có bản 1.3.41",
       "body": "LÀM SAO BIẾT NHẮC VIỆC CÓ TỚI HAY KHÔNG.\n\nSỬA — TRÊN WINDOWS, NHẮC HÀNG NGÀY CHỈ HIỆN MỘT LẦN RỒI THÔI:\nĐể máy tính mở liên tiếp nhiều ngày thì các nhắc lặp mỗi ngày — việc quá hạn, bản tin sáng, nhắc viết báo cáo, nhắc giờ đã bấm chưa gắn việc — chỉ hiện đúng một lần rồi im. Máy tắt-mở hàng ngày không thấy gì lạ vì mở app lên là lịch được đặt lại; nhưng máy để mở liên tục thì từ ngày thứ hai không còn nhắc nào — và im lặng, mục nhắc trong Cài đặt vẫn bật. Nay app tự đặt lại lịch trong nền. Điện thoại không dính lỗi này.\n\nMỚI — \"NHẮC VIỆC CÓ TỚI KHÔNG?\" (Cài đặt › Nhắc việc):\nNhắc việc hỏng thì hỏng trong im lặng — sáng ra không thấy thông báo nào, bạn không có cách nào biết đó là \"không có việc quá hạn\", hay \"quyền thông báo bị tắt\", hay \"app chưa kịp đặt lịch\". Ba chuyện rất khác nhau, nhìn thì giống hệt.\n• THỬ NHẮC NGAY — bắn một thông báo qua đúng đường mà nhắc việc thật đi, rồi nói thẳng chuyện gì đã xảy ra, kể cả khi hỏng. Trên Android còn hỏi hệ điều hành xem quyền thông báo còn bật không — vì quyền bị tắt thì app vẫn \"gửi\" bình thường mà chẳng có gì hiện lên.\n• LỊCH ĐANG CHỜ — liệt kê mọi nhắc app đã hứa sẵn, bằng tiếng Việt. Có lịch mà không thấy nổ thì vấn đề ở điện thoại/máy tính (tiết kiệm pin, chặn thông báo); danh sách trống thì vấn đề ở app.",
