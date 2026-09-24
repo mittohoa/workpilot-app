@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "release-1.3.41",
+      "title": "📣 Đã có bản 1.3.41",
+      "body": "LÀM SAO BIẾT NHẮC VIỆC CÓ TỚI HAY KHÔNG.\n\nSỬA — TRÊN WINDOWS, NHẮC HÀNG NGÀY CHỈ HIỆN MỘT LẦN RỒI THÔI:\nĐể máy tính mở liên tiếp nhiều ngày thì các nhắc lặp mỗi ngày — việc quá hạn, bản tin sáng, nhắc viết báo cáo, nhắc giờ đã bấm chưa gắn việc — chỉ hiện đúng một lần rồi im. Máy tắt-mở hàng ngày không thấy gì lạ vì mở app lên là lịch được đặt lại; nhưng máy để mở liên tục thì từ ngày thứ hai không còn nhắc nào — và im lặng, mục nhắc trong Cài đặt vẫn bật. Nay app tự đặt lại lịch trong nền. Điện thoại không dính lỗi này.\n\nMỚI — \"NHẮC VIỆC CÓ TỚI KHÔNG?\" (Cài đặt › Nhắc việc):\nNhắc việc hỏng thì hỏng trong im lặng — sáng ra không thấy thông báo nào, bạn không có cách nào biết đó là \"không có việc quá hạn\", hay \"quyền thông báo bị tắt\", hay \"app chưa kịp đặt lịch\". Ba chuyện rất khác nhau, nhìn thì giống hệt.\n• THỬ NHẮC NGAY — bắn một thông báo qua đúng đường mà nhắc việc thật đi, rồi nói thẳng chuyện gì đã xảy ra, kể cả khi hỏng. Trên Android còn hỏi hệ điều hành xem quyền thông báo còn bật không — vì quyền bị tắt thì app vẫn \"gửi\" bình thường mà chẳng có gì hiện lên.\n• LỊCH ĐANG CHỜ — liệt kê mọi nhắc app đã hứa sẵn, bằng tiếng Việt. Có lịch mà không thấy nổ thì vấn đề ở điện thoại/máy tính (tiết kiệm pin, chặn thông báo); danh sách trống thì vấn đề ở app.",
+      "level": "update",
+      "url": "https://github.com/mittohoa/workpilot-app/releases/tag/v1.3.41"
+    },
+    {
       "id": "release-1.3.40",
       "title": "📣 Đã có bản 1.3.40",
       "body": "PHẦN NHẮC VIỆC — gồm một bản sửa có thể bạn đã gặp mà tưởng do mình quên đặt nhắc.\n\nSỬA — VIỆC GẤP NHẤT LẠI LÀ VIỆC KHÔNG ĐƯỢC NHẮC:\nApp nhắc trước hạn theo số giờ bạn đặt, mặc định 24 giờ. Nhưng nếu mốc nhắc đó đã trôi qua thì nó bỏ luôn, không nhắc gì cả — tức ghi “họp 15h chiều nay” lúc 9h sáng là im lặng, vì hạn đã nằm trong khung 24 giờ. Việc càng gấp thì càng chắc chắn không được nhắc, mà mục nhắc trong Cài đặt vẫn bật nên trông như đang chạy bình thường.\nNay nhắc ngay, kèm còn bao lâu: “GẤP — sắp đến hạn ⏰ · Chốt số liệu · còn 6 giờ”. Áp cho cả việc và việc con.\n\nMỚI — NHẮC VIỆC ĐÃ QUÁ HẠN: 8h sáng mỗi ngày MỘT thông báo gộp, quá hạn lâu nhất lên trước. Trước đây app không hề nhắc quá hạn — nhắc trước hạn bắn một lần rồi thôi. Gộp một cái chứ không mỗi việc một thông báo: 12 việc quá hạn thành 12 thông báo là thứ người ta tắt luôn cả nhóm.\n\nMỚI — NHẮC RIÊNG TỪNG VIỆC: mở một việc → “Nhắc lúc” → chọn ngày và GIỜ. Độc lập với hạn chót, và là đường duy nhất nhắc được việc KHÔNG có hạn — việc cần làm ngay nhưng không phải deadline. Tắt công tắc “nhắc trước hạn” thì vẫn nhắc, vì đây là mốc bạn đặt tay. Đồng bộ đa thiềt bị.",
