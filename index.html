@@ -29,6 +29,9 @@
   .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--pri),var(--pri2));
     color:#fff;padding:12px 20px;border-radius:12px;font-weight:600;border:0;cursor:pointer;font-size:15px}
   .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--fg)}
+  .btn.soon{background:transparent;border:1px dashed var(--line);color:var(--mut);
+    cursor:default;margin-left:8px}
+  .btn.soon:hover{opacity:1}
   .btn:hover{opacity:.92}
   section{padding:70px 0;border-bottom:1px solid var(--line)}
   .hero{text-align:center;padding:90px 0 70px}
@@ -190,10 +193,11 @@
       <div class="dlcard">
         <div class="ic">🤖</div>
         <h3>Android</h3>
-        <small>Google Play · Android 7.0+ (API 24)</small>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.mittohoa.workpilot_ai">⬇ Tải trên Google Play</a>
-        <p style="margin-top:10px;font-size:13px;color:var(--mut)">Hoặc <a href="https://github.com/mittohoa/workpilot-app/releases/latest/download/WorkPilotAI.apk">tải APK trực tiếp</a> (~111 MB, gồm cả 4 loại CPU) — cho máy không vào được Play.</p>
-        <p style="margin-top:10px;font-size:13px;color:var(--mut)"><b>Chọn một đường rồi theo luôn:</b> bản Play và bản APK ký bằng khoá khác nhau nên <b>không cài đè lên nhau</b> được. Muốn đổi thì <b>xuất sao lưu → gỡ app → cài lại</b>.<br>
+        <small>Android 7.0+ (API 24)</small>
+        <a class="btn" href="https://github.com/mittohoa/workpilot-app/releases/latest/download/WorkPilotAI.apk">⬇ Tải APK (~111 MB)</a>
+        <span class="btn soon" aria-disabled="true">⏳ Sắp có trên Google Play</span>
+        <p style="margin-top:10px;font-size:13px;color:var(--mut)">Bản APK gồm cả 4 loại CPU, cài được ngay mà không cần chờ lên store.</p>
+        <p style="margin-top:10px;font-size:13px;color:var(--mut)"><b>Khi bản Play ra mắt:</b> bản Play và bản APK ký bằng khoá khác nhau nên <b>không cài đè lên nhau</b> được. Muốn đổi thì <b>xuất sao lưu → gỡ app → cài lại</b>.<br>
           Bản APK cần bật “cài từ nguồn không xác định” và <b>không tự cập nhật</b> — có bản mới thì quay lại đây tải.</p>
       </div>
       <div class="dlcard">
